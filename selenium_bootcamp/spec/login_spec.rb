@@ -1,15 +1,10 @@
-require 'selenium-webdriver'
-require_relative 'login'
+require_relative 'spec_helper'
+require_relative '../pages/login'
 
 describe 'Login' do
 	
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
     @login = Login.new(@driver)
-  end
-
-  after(:each) do
-    @driver.quit
   end
 
   it 'succeeded' do
