@@ -35,5 +35,5 @@ public class CareerPage {
 	public void navigateToJobPositionPage(String location) {
 		WebElement city = cities.findElement(By.className(citiesHash.get(location)));
 		city.findElement(By.className("ac-btn")).click();
-	}
+	}	
 }

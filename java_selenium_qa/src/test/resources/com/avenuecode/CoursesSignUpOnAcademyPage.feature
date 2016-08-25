@@ -1,7 +1,7 @@
 Feature: As a User, I want sign-up for a course at Academy page, and be redirected to the Contact page
 
 @runThis
-Scenario Outline: Succeful redirect to Contact page when sign up a course
+Scenario Outline: Successfully redirect to Contact page when sign up a course
 	Given I visit Avenue Code website
 	And I access the 'Academy Page'
 	When I click in the '<courses>' for more informations

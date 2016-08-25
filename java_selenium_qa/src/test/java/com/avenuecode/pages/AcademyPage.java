@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.avenuecode.CareerSteps;
-
 public class AcademyPage {
 	private static HashMap<String, String> coursesHash;
 	static {
@@ -24,7 +22,7 @@ public class AcademyPage {
 	public void clickForMoreInformationsOf(String course) {
 		WebElement courseDiv = academyBody.findElement(By.id(coursesHash.get(course)));
 		WebElement parentCourseDiv = courseDiv.findElement(By.xpath(".."));
-		academyBody.findElement(By.className("icon-more")).click();		
+		parentCourseDiv.findElement(By.className("icon-more")).click();		
 	}
 
 	public String getContactUrl(String course) {
