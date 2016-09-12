@@ -9,10 +9,10 @@ Scenario Outline: Successfully open a modal with informations about a specific t
 	Then I should see a window with more informations about '<talent>'
 Examples:
 
-	| talent |
-	| Project Management 	|
+	| talent                |
+	| Project Management 	  |
 	| Business Analysis   	|
-  	| Software Development  |
-  	| Quality Assurance   	|
-  	| Development Operations|
-  	| Product Management  	|
+  | Software Development  |
+  | Quality Assurance   	|
+  | Development Operations|
+  | Product Management  	|

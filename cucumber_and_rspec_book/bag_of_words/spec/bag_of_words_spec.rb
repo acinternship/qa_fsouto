@@ -3,9 +3,15 @@ require "bag_of_words"
 require 'rspec/collection_matchers'
 
 describe BagOfWords do
+  after(:all) do
+    # Teardown
+  end
+
   it "is possible to put words on it " do
+    # Setup
     bag = BagOfWords.new
 
+    # Exercise
     bag.put("hello", "world")
 
     # Sequence of steps:
@@ -16,6 +22,7 @@ describe BagOfWords do
     #
     # 3 - If the object responds the HaveMatcher assumes that the object has a collection
 
+    # Verify
     expect(bag).to have(2).words
   end
 
